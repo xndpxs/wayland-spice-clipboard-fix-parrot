@@ -1,12 +1,12 @@
 [Unit]
-Description=Wayland to Spice Clipboard Bridge
-After=graphical-session.target
+Description=Wayland to SPICE clipboard bridge
+PartOf=graphical-session.target
 
 [Service]
-Type=simple
+Type=exec
 ExecStart=/usr/local/bin/wayland-spice-clipboard
-Restart=always
-RestartSec=5
+Restart=on-failure
+RestartSec=3
 
 [Install]
-WantedBy=default.target
+WantedBy=graphical-session.target

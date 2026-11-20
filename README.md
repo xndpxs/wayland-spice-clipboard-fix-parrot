@@ -2,7 +2,7 @@
 
 Fixes clipboard synchronization between Wayland guests and SPICE hosts.
 
-Tested on Fedora 42 with KDE Plasma 6.
+Tested on ParrotOS.
 
 ## Problem
 
